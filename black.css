@@ -1,29 +1,51 @@
 body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin:0;
+  height:100vh;
+  width: 100vw;
   font-family: Trebuchet MS;
-  background: green;
+  background: #1184e6;
   text-align: center;
   color: white;
   font-weight: bold;
-  padding-top: 150px;
   line-height: 25px;
 }
+
 h1{
-  color: goldenrod;
+  color: crimson;
+  width: 100%;
 }
 #message-el{
   font-style: italic;
+  width: 100%;
 }
 button {
   display: block;
   margin: 0 auto;
-  width: 150px;
-  height: 30px;
-  color: #016f32;
-  background: goldenrod;
-  padding-top:2px;
-  padding-bottom: 2px;
-  margin-bottom: 2px;
-  margin-top: 2px;
+  width: 9.3rem;
+  height: 2rem;
+  color: #1184e6;
+  background: crimson;
+  padding:2px 0;
+  margin-bottom: 5px;
+  margin-top: 5px;
   font-weight: bold;
   border: none;
+}
+
+@media only screen and (min-width:1023px){
+   .heading{
+     font-size: 100px;
+   }
+   p{
+    font-size: 50px;
+  }
+  button{
+    width:20%;
+    height: 4rem;
+    font-size: 30px;
+  }
 }
